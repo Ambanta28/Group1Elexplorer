@@ -17,7 +17,12 @@ const Home = () => {
     return (
         <View style={styles.container}>
             
-           
+            <Image
+                source={{
+                    uri: 'https://i.ibb.co/z8xZzfR/elexplorer.png',
+                }}
+                style={styles.logo}
+            />
 
             
             <Text style={styles.appName}>ELEXPLORER</Text>
