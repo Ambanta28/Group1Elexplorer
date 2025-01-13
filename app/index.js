@@ -2,7 +2,6 @@ import React from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity, TextInput } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-// Utility function to generate random colors
 const getRandomColor = () => {
     const letters = '0123456789ABCDEF';
     let color = '#';
@@ -17,24 +16,19 @@ const Home = () => {
 
     return (
         <View style={styles.container}>
-            {/* Logo */}
-            <Image
-                source={{
-                    uri: 'https://i.ibb.co/z8xZzfR/elexplorer.png',
-                }}
-                style={styles.logo}
-            />
+            
+           
 
-            {/* App Name */}
+            
             <Text style={styles.appName}>ELEXPLORER</Text>
 
-            {/* Buttons */}
+            
             <View style={styles.buttonContainer}>
                 {['Learning'].map((title, index) => (
                     <TouchableOpacity
                         key={index}
                         style={[styles.button, { backgroundColor: getRandomColor() }]}
-                        onPress={() => navigation.navigate(title.replace(' ', ''))} // Replace with actual screen names
+                        onPress={() => navigation.navigate(title.replace(' ', ''))} 
                     >
                         <Text style={styles.buttonText}>{title}</Text>
                     </TouchableOpacity>
@@ -69,7 +63,7 @@ const styles = StyleSheet.create({
         width: '100%',
         paddingVertical: 15,
         borderRadius: 10,
-        marginBottom: 15, // Space between buttons
+        marginBottom: 15, 
         alignItems: 'center',
     },
     buttonText: {
