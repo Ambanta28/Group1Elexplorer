@@ -30,7 +30,7 @@ const Home = () => {
 
             {/* Buttons */}
             <View style={styles.buttonContainer}>
-                {['Learning', 'Quiz Game', 'Setting', 'Exit'].map((title, index) => (
+                {['Learning'].map((title, index) => (
                     <TouchableOpacity
                         key={index}
                         style={[styles.button, { backgroundColor: getRandomColor() }]}
