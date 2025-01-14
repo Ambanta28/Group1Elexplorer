@@ -165,6 +165,96 @@ const elements = [
         trivia: 'Argon makes up about 1% of Earth’s atmosphere.', 
         image: 'https://upload.wikimedia.org/wikipedia/commons/e/e3/Argon_Discharge_Tube.jpg', 
         application: 'Used in light bulbs, welding, and preserving historical documents.' 
+    },
+    { 
+        symbol: 'K', 
+        name: 'Potassium', 
+        number: 19, 
+        description: 'Potassium is a soft, reactive metal that is essential for nerve and muscle function in living organisms.', 
+        trivia: 'Potassium reacts violently with water, producing a lilac flame.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/4/42/Potassium_sample.jpg', 
+        application: 'Used in fertilizers, glass production, and as a dietary supplement.' 
+    },
+    { 
+        symbol: 'Ca', 
+        name: 'Calcium', 
+        number: 20, 
+        description: 'Calcium is a silvery-white metal essential for strong bones and teeth, and it plays a role in muscle function.', 
+        trivia: 'Calcium compounds are what make up limestone, marble, and coral reefs.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/2/26/Calcium_unter_Argon_Schutzgas_Atmosph%C3%A4re.jpg', 
+        application: 'Used in cement, plaster, and as a dietary supplement.' 
+    },
+    { 
+        symbol: 'Sc', 
+        name: 'Scandium', 
+        number: 21, 
+        description: 'Scandium is a rare, lightweight metal often used in aerospace applications and sports equipment.', 
+        trivia: 'Scandium is sometimes called the “hidden element” because it is hard to extract.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Scandium_crystals.jpg', 
+        application: 'Used in alloys for aircraft and high-performance sports equipment.' 
+    },
+    { 
+        symbol: 'Ti', 
+        name: 'Titanium', 
+        number: 22, 
+        description: 'Titanium is a strong, lightweight metal resistant to corrosion and widely used in aerospace, medical implants, and jewelry.', 
+        trivia: 'Titanium is named after the Titans from Greek mythology.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/a/a3/Titanium_crystal_bar_and_1cm3_cube.jpg', 
+        application: 'Used in aircraft, spacecraft, and surgical implants.' 
+    },
+    { 
+        symbol: 'V', 
+        name: 'Vanadium', 
+        number: 23, 
+        description: 'Vanadium is a hard, durable metal often used to strengthen steel and make it more resistant to corrosion.', 
+        trivia: 'Vanadium compounds can produce beautiful colors when dissolved in water.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/Vanadium_single_crystal_and_1cm3_cube.jpg', 
+        application: 'Used in tools, construction materials, and jet engines.' 
+    },
+    { 
+        symbol: 'Cr', 
+        name: 'Chromium', 
+        number: 24, 
+        description: 'Chromium is a shiny, hard metal that is often used to give a polished, reflective surface to objects.', 
+        trivia: 'The name “chromium” comes from the Greek word “chroma,” meaning color, because of its colorful compounds.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/5/5d/Chromium_crystals_and_1cm3_cube.jpg', 
+        application: 'Used in stainless steel, chrome plating, and pigments.' 
+    },
+    { 
+        symbol: 'Mn', 
+        name: 'Manganese', 
+        number: 25, 
+        description: 'Manganese is a metal used in steel production to improve strength and durability.', 
+        trivia: 'Manganese is essential for the process of photosynthesis in plants.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/d/d1/Manganese_electrolytic_and_1cm3_cube.jpg', 
+        application: 'Used in steelmaking, batteries, and as a dietary mineral.' 
+    },
+    { 
+        symbol: 'Fe', 
+        name: 'Iron', 
+        number: 26, 
+        description: 'Iron is a common, versatile metal used in construction, manufacturing, and is essential in hemoglobin for oxygen transport in blood.', 
+        trivia: 'Iron is the most abundant metal in the core of the Earth.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Iron_electrolytic_and_1cm3_cube.jpg', 
+        application: 'Used in construction, machinery, and tools.' 
+    },
+    { 
+        symbol: 'Co', 
+        name: 'Cobalt', 
+        number: 27, 
+        description: 'Cobalt is a hard, bluish metal used in batteries, alloys, and pigments.', 
+        trivia: 'Cobalt compounds have been used for centuries to produce blue glass and ceramics.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Cobalt_electrolytic_and_1cm3_cube.jpg', 
+        application: 'Used in batteries, magnets, and jet engines.' 
+    },
+    { 
+        symbol: 'Ni', 
+        name: 'Nickel', 
+        number: 28, 
+        description: 'Nickel is a corrosion-resistant metal widely used in stainless steel and coins.', 
+        trivia: 'Nickel is commonly found in meteorites and was one of the first metals used by humans.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/6/65/Nickel_electrolytic_and_1cm3_cube.jpg', 
+        application: 'Used in stainless steel, batteries, and plating.' 
     }
 ];
     
