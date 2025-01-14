@@ -200,7 +200,7 @@ const styles = StyleSheet.create({
         fontSize: 12,
     },
     name: {
-        fontSize: 12,
+        fontSize: 8,
         fontWeight: 'bold',
     },
     modalContainer: {
