@@ -255,6 +255,96 @@ const elements = [
         trivia: 'Nickel is commonly found in meteorites and was one of the first metals used by humans.', 
         image: 'https://upload.wikimedia.org/wikipedia/commons/6/65/Nickel_electrolytic_and_1cm3_cube.jpg', 
         application: 'Used in stainless steel, batteries, and plating.' 
+    },
+    { 
+        symbol: 'Cu', 
+        name: 'Copper', 
+        number: 29, 
+        description: 'Copper is a reddish metal with high thermal and electrical conductivity, widely used in wiring and electronics.', 
+        trivia: 'Copper was one of the first metals to be used by humans, dating back to 8000 BCE.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/6/63/Copper_electrolytic_and_1cm3_cube.jpg', 
+        application: 'Used in electrical wiring, plumbing, and coins.' 
+    },
+    { 
+        symbol: 'Zn', 
+        name: 'Zinc', 
+        number: 30, 
+        description: 'Zinc is a bluish-white metal used to prevent corrosion and as an essential trace element in living organisms.', 
+        trivia: 'Zinc is critical for the immune system and wound healing in humans.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/5/55/Zinc_electrolytic_and_1cm3_cube.jpg', 
+        application: 'Used in galvanizing steel, batteries, and dietary supplements.' 
+    },
+    { 
+        symbol: 'Ga', 
+        name: 'Gallium', 
+        number: 31, 
+        description: 'Gallium is a soft, silvery metal that melts in your hand and is used in semiconductors and LEDs.', 
+        trivia: 'Gallium has such a low melting point that it can melt in the palm of your hand.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/2/25/Gallium_crystals.jpg', 
+        application: 'Used in electronics, solar panels, and thermometers.' 
+    },
+    { 
+        symbol: 'Ge', 
+        name: 'Germanium', 
+        number: 32, 
+        description: 'Germanium is a shiny, brittle metalloid used in semiconductors and fiber optics.', 
+        trivia: 'Germanium was predicted by Dmitri Mendeleev before it was discovered and was originally called “ekasilicon.”', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/2/2b/Germanium-crystal.jpg', 
+        application: 'Used in fiber optics, infrared optics, and electronics.' 
+    },
+    { 
+        symbol: 'As', 
+        name: 'Arsenic', 
+        number: 33, 
+        description: 'Arsenic is a toxic metalloid historically used in pesticides and medicine, now mainly used in electronics.', 
+        trivia: 'Arsenic compounds were once used as pigments in paints, but their toxicity caused their discontinuation.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/5/55/Arsenic-sample.jpg', 
+        application: 'Used in semiconductors, wood preservatives, and insecticides.' 
+    },
+    { 
+        symbol: 'Se', 
+        name: 'Selenium', 
+        number: 34, 
+        description: 'Selenium is a nonmetal with photoconductive properties, used in photocopiers and solar cells.', 
+        trivia: 'Selenium is essential for the human diet in trace amounts but toxic in high doses.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/e/e1/Selenium_sublimed_dendritic.jpg', 
+        application: 'Used in glassmaking, electronics, and dietary supplements.' 
+    },
+    { 
+        symbol: 'Br', 
+        name: 'Bromine', 
+        number: 35, 
+        description: 'Bromine is a reddish-brown liquid at room temperature, used in flame retardants and water treatment.', 
+        trivia: 'Bromine is one of only two elements that are liquid at room temperature (the other being mercury).', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/c/c1/Bromine_ampoule.jpg', 
+        application: 'Used in flame retardants, pesticides, and water purification.' 
+    },
+    { 
+        symbol: 'Kr', 
+        name: 'Krypton', 
+        number: 36, 
+        description: 'Krypton is a colorless noble gas used in lighting and photography due to its bright emission spectrum.', 
+        trivia: 'Krypton is used in some types of photographic flashes for high-speed photography.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/a/a1/Krypton_discharge_tube.jpg', 
+        application: 'Used in lighting, lasers, and insulating windows.' 
+    },
+    { 
+        symbol: 'Rb', 
+        name: 'Rubidium', 
+        number: 37, 
+        description: 'Rubidium is a soft, highly reactive metal that is used in atomic clocks and specialized glasses.', 
+        trivia: 'Rubidium is so reactive that it can ignite spontaneously in air.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/6/60/Rubidium_sample_ampoule.jpg', 
+        application: 'Used in atomic clocks, electronics, and research.' 
+    },
+    { 
+        symbol: 'Sr', 
+        name: 'Strontium', 
+        number: 38, 
+        description: 'Strontium is a soft, silvery metal often used in fireworks to produce bright red flames.', 
+        trivia: 'Strontium-90 is a radioactive isotope found in nuclear fallout.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Strontium.jpg', 
+        application: 'Used in fireworks, medical imaging, and glow-in-the-dark paints.' 
     }
 ];
     
