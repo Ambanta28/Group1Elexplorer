@@ -51,6 +51,9 @@ const elements = [
     { symbol: 'Rb', name: 'Rubidium', number: 37, description: 'Rubidium is a soft, silvery-white metallic element that is highly reactive and belongs to the alkali metal group.', trivia: 'Rubidium is one of the least abundant alkali metals on Earth!', image: 'https://upload.wikimedia.org/wikipedia/commons/6/66/Rubidium_Metal.jpg', application: 'Used in research and in the production of special glasses and atomic clocks.', row: 5, col: 1 },
     { symbol: 'Sr', name: 'Strontium', number: 38, description: 'Strontium is a soft, silvery metal that is highly reactive and is commonly used in fireworks and in the production of magnets.', trivia: 'Strontium compounds produce a bright red flame when burned!', image: 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Strontium_Metal.jpg', application: 'Used in fireworks, magnets, and in the production of ferrite ceramics.', row: 5, col: 2 },
     { symbol: 'Y', name: 'Yttrium', number: 39, description: 'Yttrium is a rare, silvery metal used in superconductors and in the production of phosphors for color television tubes.', trivia: 'Yttrium is often found in rare earth minerals!', image: 'https://upload.wikimedia.org/wikipedia/commons/1/10/Yttrium_Grain.jpg', application: 'Used in superconductors, phosphors, and in various metal alloys.', row: 5, col: 3 },
+    { symbol: 'Zr', name: 'Zirconium', number: 40, description: 'Zirconium is a corrosion-resistant metal used in nuclear reactors and in the production of high-performance ceramics.', trivia: 'Zirconium is highly resistant to corrosion and heat!', image: 'https://upload.wikimedia.org/wikipedia/commons/5/53/Zirconium_metal.jpg', application: 'Used in nuclear reactors, in high-performance ceramics, and in various alloys.', row: 5, col: 4 },
+    { symbol: 'Nb', name: 'Niobium', number: 41, description: 'Niobium is a soft, grey, crystalline metal used in steel production and in high-temperature superalloys.', trivia: 'Niobium is named after the Greek goddess Niobe, due to its affinity for tantalum!', image: 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Niobium_Metal.jpg', application: 'Used in steel alloys, superconducting magnets, and in aerospace applications.', row: 5, col: 5 },
+    { symbol: 'Mo', name: 'Molybdenum', number: 42, description: 'Molybdenum is a refractory metal used in high-strength alloys and as a catalyst in various industrial processes.', trivia: 'Molybdenum is a key component in steel production due to its high melting point!', image: 'https://upload.wikimedia.org/wikipedia/commons/2/28/Molybdenum_metal.jpg', application: 'Used in steel production, high-strength alloys, and as a catalyst in chemical processes.', row: 5, col: 6 },
 ];
 
 const colors = ['#FFCDD2', '#F8BBD0', '#E1BEE7', '#D1C4E9', '#C5CAE9', '#BBDEFB', '#B3E5FC', '#B2EBF2', '#B2DFDB', '#C8E6C9', '#DCEDC8', '#F0F4C3', '#FFECB3', '#FFE0B2', '#FFCCBC', '#D7CCC8', '#CFD8DC'];
@@ -151,7 +154,7 @@ const Learning = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        padding: 16,
+        padding: 90,
         backgroundColor: '#f5f5f5',
     },
     header: {
@@ -178,6 +181,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         flexWrap: 'wrap',
         position: 'relative',
+        padding: '100',
     },
     element: {
         width: 50,
@@ -185,7 +189,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 8,
-        margin: 4,
+        margin: 10,
         position: 'absolute',
     },
     symbol: {
