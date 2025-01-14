@@ -84,8 +84,91 @@ const elements = [
         trivia: 'Fluorine is used to make Teflon, the nonstick coating on cookware.', 
         image: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Fluorine_Sample.jpg', 
         application: 'Used in toothpaste, refrigerants, and nonstick coatings.' 
+    },
+    { 
+        symbol: 'Ne', 
+        name: 'Neon', 
+        number: 10, 
+        description: 'Neon is a noble gas famous for its use in colorful neon signs due to its bright glow when electrified.', 
+        trivia: 'Neon glows red-orange in neon lights but can produce other colors with different gases or coatings.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/f/f0/Neon_lights.jpg', 
+        application: 'Used in advertising signs and high-voltage indicators.' 
+    },
+    { 
+        symbol: 'Na', 
+        name: 'Sodium', 
+        number: 11, 
+        description: 'Sodium is a highly reactive metal that plays a key role in nerve function and fluid balance in living organisms.', 
+        trivia: 'Sodium reacts explosively with water, producing hydrogen gas!', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Sodium.jpg', 
+        application: 'Used in table salt, streetlights, and industrial chemicals.' 
+    },
+    { 
+        symbol: 'Mg', 
+        name: 'Magnesium', 
+        number: 12, 
+        description: 'Magnesium is a lightweight metal essential for many biological processes and used in strong, lightweight alloys.', 
+        trivia: 'Magnesium burns with an intense, bright white flame.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/e/e8/Magnesium.jpg', 
+        application: 'Used in fireworks, airplanes, and as a dietary supplement.' 
+    },
+    { 
+        symbol: 'Al', 
+        name: 'Aluminum', 
+        number: 13, 
+        description: 'Aluminum is a lightweight, corrosion-resistant metal widely used in packaging, transportation, and construction.', 
+        trivia: 'Aluminum is the most abundant metal in the Earth’s crust.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/6/60/Aluminium-4.jpg', 
+        application: 'Used in cans, aircraft, and kitchen utensils.' 
+    },
+    { 
+        symbol: 'Si', 
+        name: 'Silicon', 
+        number: 14, 
+        description: 'Silicon is a metalloid critical for the electronics industry and a major component of sand and glass.', 
+        trivia: 'Silicon is the second most abundant element in the Earth’s crust, after oxygen.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/4/48/Silicon.jpg', 
+        application: 'Used in semiconductors, solar cells, and glassmaking.' 
+    },
+    { 
+        symbol: 'P', 
+        name: 'Phosphorus', 
+        number: 15, 
+        description: 'Phosphorus is a reactive nonmetal that is crucial for life, forming part of DNA, RNA, and ATP molecules.', 
+        trivia: 'Phosphorus exists in several forms, including white phosphorus, which glows in the dark.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Phosphorus_sublimed_dendritic.jpg', 
+        application: 'Used in fertilizers, detergents, and safety matches.' 
+    },
+    { 
+        symbol: 'S', 
+        name: 'Sulfur', 
+        number: 16, 
+        description: 'Sulfur is a bright yellow, brittle nonmetal used in various industrial processes and found in amino acids.', 
+        trivia: 'Sulfur has been used since ancient times, often referred to as brimstone in historical texts.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Sulfur-sample.jpg', 
+        application: 'Used in rubber vulcanization, fertilizers, and gunpowder.' 
+        },
+        { 
+        symbol: 'Cl', 
+        name: 'Chlorine', 
+        number: 17, 
+        description: 'Chlorine is a highly reactive halogen used to disinfect water and as a component in various compounds.', 
+        trivia: 'Chlorine was one of the first elements used in chemical warfare during World War I.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Chlorine_gas_in_bottle.jpg', 
+        application: 'Used in water purification, bleach, and PVC plastic.' 
+    },
+    { 
+        symbol: 'Ar', 
+        name: 'Argon', 
+        number: 18, 
+        description: 'Argon is a noble gas commonly used in welding and lighting due to its inert properties.', 
+        trivia: 'Argon makes up about 1% of Earth’s atmosphere.', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/e/e3/Argon_Discharge_Tube.jpg', 
+        application: 'Used in light bulbs, welding, and preserving historical documents.' 
     }
 ];
+    
+
 
 const colors = ['#FFCDD2', '#F8BBD0', '#E1BEE7', '#D1C4E9', '#C5CAE9', '#BBDEFB', '#B3E5FC', '#B2EBF2', '#B2DFDB', '#C8E6C9', '#DCEDC8', '#F0F4C3', '#FFECB3', '#FFE0B2', '#FFCCBC', '#D7CCC8', '#CFD8DC'];
 
