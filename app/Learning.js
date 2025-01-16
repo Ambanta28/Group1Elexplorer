@@ -298,6 +298,10 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         marginBottom: 16,
     },
+    scrollContainer: {
+        padding: 5,
+        flexGrow: 1,
+    },
 });
 
 export default Learning;
