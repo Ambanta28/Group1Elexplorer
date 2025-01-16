@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
         borderRadius: 8,
         margin: 10,
         position: 'absolute',
+        justifyContent: 'center',
     },
     symbol: {
         fontSize: 16,
