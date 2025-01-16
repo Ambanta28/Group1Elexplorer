@@ -9,6 +9,7 @@ import {
     Button,
     TextInput,
     Alert,
+    ScrollView,
 } from 'react-native';
 
 const elements = [
@@ -127,58 +128,60 @@ const Learning = () => {
     };
 
     return (
-        <View style={styles.container}>
-            <View style={styles.header}>
-                <Text style={styles.headerText}>ELEXPLORER</Text>
-            </View>
-            <TextInput
-                style={styles.searchBar}
-                placeholder="Search elements..."
-                value={searchText}
-                onChangeText={setSearchText}
-                accessible={true}
-                accessibilityLabel="Search bar"
-            />
-            <View style={styles.gridContainer}>
-                {filteredElements.map((item, index) => renderItem(item, index))}
-            </View>
-            {selectedElement && (
-                <Modal
-                    animationType="slide"
-                    transparent={true}
-                    visible={!!selectedElement}
-                    onRequestClose={() => setSelectedElement(null)}
-                >
-                    <View style={styles.modalContainer}>
-                        <View style={styles.modalContent}>
-                            <TouchableOpacity
-                                style={styles.closeButton}
-                                onPress={() => setSelectedElement(null)}
-                                accessible={true}
-                                accessibilityLabel="Close modal"
-                            >
-                                <Text style={styles.closeButtonText}>X</Text>
-                            </TouchableOpacity>
-                            <Text style={styles.modalSymbol}>{selectedElement.symbol}</Text>
-                            <Text style={styles.modalName}>{selectedElement.name}</Text>
-                            <Image
-                                source={{ uri: selectedElement.image }}
-                                style={styles.modalImage}
-                                onError={(e) => console.log('Image failed to load:', e.nativeEvent.error)}
-                            />
-                            <Text style={styles.modalDescription}>{selectedElement.description}</Text>
-                            <Text style={styles.modalApplication}>Real-World Application: {selectedElement.application}</Text>
-                            <Text style={styles.modalTrivia}>Trivia: {selectedElement.trivia}</Text>
-                            <Button
-                                title="Close"
-                                onPress={() => setSelectedElement(null)}
-                                color="#007BFF"
-                            />
+        <ScrollView contentContainerStyle={styles.scrollContainer}>
+            <View style={styles.container}>
+                <View style={styles.header}>
+                    <Text style={styles.headerText}>ELEXPLORER</Text>
+                </View>
+                <TextInput
+                    style={styles.searchBar}
+                    placeholder="Search elements..."
+                    value={searchText}
+                    onChangeText={setSearchText}
+                    accessible={true}
+                    accessibilityLabel="Search bar"
+                />
+                <View style={styles.gridContainer}>
+                    {filteredElements.map((item, index) => renderItem(item, index))}
+                </View>
+                {selectedElement && (
+                    <Modal
+                        animationType="slide"
+                        transparent={true}
+                        visible={!!selectedElement}
+                        onRequestClose={() => setSelectedElement(null)}
+                    >
+                        <View style={styles.modalContainer}>
+                            <View style={styles.modalContent}>
+                                <TouchableOpacity
+                                    style={styles.closeButton}
+                                    onPress={() => setSelectedElement(null)}
+                                    accessible={true}
+                                    accessibilityLabel="Close modal"
+                                >
+                                    <Text style={styles.closeButtonText}>X</Text>
+                                </TouchableOpacity>
+                                <Text style={styles.modalSymbol}>{selectedElement.symbol}</Text>
+                                <Text style={styles.modalName}>{selectedElement.name}</Text>
+                                <Image
+                                    source={{ uri: selectedElement.image }}
+                                    style={styles.modalImage}
+                                    onError={(e) => console.log('Image failed to load:', e.nativeEvent.error)}
+                                />
+                                <Text style={styles.modalDescription}>{selectedElement.description}</Text>
+                                <Text style={styles.modalApplication}>Real-World Application: {selectedElement.application}</Text>
+                                <Text style={styles.modalTrivia}>Trivia: {selectedElement.trivia}</Text>
+                                <Button
+                                    title="Close"
+                                    onPress={() => setSelectedElement(null)}
+                                    color="#007BFF"
+                                />
+                            </View>
                         </View>
-                    </View>
-                </Modal>
-            )}
-        </View>
+                    </Modal>
+                )}
+            </View>
+        </ScrollView>
     );
 };
 
