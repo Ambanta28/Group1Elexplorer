@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, TouchableOpacity, TextInput } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableOpacity, TextInput, ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 const getRandomColor = () => {
@@ -15,31 +15,26 @@ const Home = () => {
     const navigation = useNavigation();
 
     return (
-        <View style={styles.container}>
-            
-            <Image
-                source={{
-                    uri: 'https://i.ibb.co/z8xZzfR/elexplorer.png',
-                }}
-                style={styles.logo}
-            />
-
-            
-            <Text style={styles.appName}>ELEXPLORER</Text>
-
-            
-            <View style={styles.buttonContainer}>
-                {['Learning'].map((title, index) => (
-                    <TouchableOpacity
-                        key={index}
-                        style={[styles.button, { backgroundColor: getRandomColor() }]}
-                        onPress={() => navigation.navigate(title.replace(' ', ''))} 
-                    >
-                        <Text style={styles.buttonText}>{title}</Text>
-                    </TouchableOpacity>
-                ))}
-            </View>
+        <ScrollView contentContainerStyle={styles.container}>
+        <Image
+            source={{
+                uri: 'https://i.ibb.co/z8xZzfR/elexplorer.png',
+            }}
+            style={styles.logo}
+        />
+        <Text style={styles.appName}>ELEXPLORER</Text>
+        <View style={styles.buttonContainer}>
+            {['Learning'].map((title, index) => (
+                <TouchableOpacity
+                    key={index}
+                    style={[styles.button, { backgroundColor: getRandomColor() }]}
+                    onPress={() => navigation.navigate(title.replace(' ', ''))} 
+                >
+                    <Text style={styles.buttonText}>{title}</Text>
+                </TouchableOpacity>
+            ))}
         </View>
+    </ScrollView>
     );
 };
 
@@ -49,6 +44,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#f5f5f5',
+        paddingBottom: 20,
     },
     logo: {
         width: 150,
