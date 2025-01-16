@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import {
     View,
     Text,
@@ -11,6 +11,7 @@ import {
     Alert,
     ScrollView,
 } from 'react-native';
+import * as ScreenOrientation from 'expo-screen-orientation';
 import styles from './styles';
 const elements = [
     { symbol: 'H', name: 'Hydrogen', number: 1, description: 'Hydrogen is the lightest and most abundant element in the universe, playing a crucial role in stars and the water we drink.', trivia: 'Did you know? Hydrogen makes up about 75% of the universe by mass!', image: 'https://www.climatecouncil.org.au/wp-content/uploads/2021/01/hydrogen.png', application: 'Used in fuel cells and rocket fuel.', row: 1, col: 1 },
@@ -123,6 +124,16 @@ const colors = ['#FFCDD2', '#F8BBD0', '#E1BEE7', '#D1C4E9', '#C5CAE9', '#BBDEFB'
 const Learning = () => {
     const [selectedElement, setSelectedElement] = useState(null);
     const [searchText, setSearchText] = useState('');
+
+    useEffect(() => {
+        // Lock screen orientation to landscape on mount
+        ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.LANDSCAPE);
+
+        // Clean up by resetting orientation when the component unmounts
+        return () => {
+            ScreenOrientation.unlockAsync();
+        };
+    }, []);
 
     const filteredElements = elements.filter(
         (item) =>
