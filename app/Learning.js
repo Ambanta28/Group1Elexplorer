@@ -10,7 +10,6 @@ import {
     TextInput,
     Alert,
     ScrollView,
-    Dimensions,
 } from 'react-native';
 import styles from './styles';
 const elements = [
@@ -124,14 +123,6 @@ const colors = ['#FFCDD2', '#F8BBD0', '#E1BEE7', '#D1C4E9', '#C5CAE9', '#BBDEFB'
 const Learning = () => {
     const [selectedElement, setSelectedElement] = useState(null);
     const [searchText, setSearchText] = useState('');
-    const [scale, setScale] = useState(1);
-
-    useEffect(() => {
-        ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.LANDSCAPE);
-        return () => {
-            ScreenOrientation.unlockAsync();
-        };
-    }, []);
 
     const filteredElements = elements.filter(
         (item) =>
