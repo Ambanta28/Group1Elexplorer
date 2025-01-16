@@ -11,7 +11,7 @@ import {
     Alert,
     ScrollView,
 } from 'react-native';
-
+import styles from './styles';
 const elements = [
     { symbol: 'H', name: 'Hydrogen', number: 1, description: 'Hydrogen is the lightest and most abundant element in the universe, playing a crucial role in stars and the water we drink.', trivia: 'Did you know? Hydrogen makes up about 75% of the universe by mass!', image: 'https://www.climatecouncil.org.au/wp-content/uploads/2021/01/hydrogen.png', application: 'Used in fuel cells and rocket fuel.', row: 1, col: 1 },
     { symbol: 'He', name: 'Helium', number: 2, description: 'Helium is a noble gas often used in balloons and deep-sea diving tanks due to its low density and inert properties.', trivia: 'Fun fact: Helium makes your voice sound funny when inhaled!', image: 'https://www.thoughtco.com/thmb/WjJCGpnJuSx3xprsfEgIdwBdoGc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/186450350-56a132cb5f9b58b7d0bcf751.jpg', application: 'Used in MRI scanners and cooling superconductors.', row: 1, col: 18 },
@@ -184,124 +184,5 @@ const Learning = () => {
         </ScrollView>
     );
 };
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        padding: 90,
-        backgroundColor: '#f5f5f5',
-    },
-    header: {
-        backgroundColor: '#007BFF',
-        padding: 16,
-        alignItems: 'center',
-        marginBottom: 16,
-    },
-    headerText: {
-        color: '#fff',
-        fontSize: 24,
-        fontWeight: 'bold',
-    },
-    searchBar: {
-        height: 40,
-        borderColor: '#ddd',
-        borderWidth: 1,
-        borderRadius: 8,
-        marginBottom: 8,
-        paddingHorizontal: 10,
-        backgroundColor: '#fff',
-    },
-    gridContainer: {
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        position: 'relative',
-        padding: '100',
-    },
-    element: {
-        width: 50,
-        height: 60,
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 8,
-        margin: 10,
-        position: 'absolute',
-    },
-    symbol: {
-        fontSize: 16,
-        fontWeight: 'bold',
-    },
-    number: {
-        fontSize: 12,
-    },
-    name: {
-        fontSize: 8,
-        fontWeight: 'bold',
-    },
-    modalContainer: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    },
-    modalContent: {
-        width: '85%',
-        padding: 16,
-        backgroundColor: '#fff',
-        borderRadius: 10,
-        alignItems: 'center',
-        position: 'relative',
-    },
-    closeButton: {
-        position: 'absolute',
-        top: 10,
-        right: 10,
-        backgroundColor: '#ddd',
-        borderRadius: 15,
-        width: 30,
-        height: 30,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    closeButtonText: {
-        fontSize: 16,
-        fontWeight: 'bold',
-    },
-    modalSymbol: {
-        fontSize: 28,
-        fontWeight: 'bold',
-    },
-    modalName: {
-        fontSize: 20,
-        marginBottom: 8,
-    },
-    modalImage: {
-        width: 150,
-        height: 150,
-        marginBottom: 8,
-        borderRadius: 8,
-    },
-    modalDescription: {
-        fontSize: 14,
-        textAlign: 'center',
-        marginBottom: 8,
-    },
-    modalApplication: {
-        fontSize: 14,
-        fontStyle: 'italic',
-        color: '#555',
-        marginBottom: 8,
-    },
-    modalTrivia: {
-        fontSize: 14,
-        fontWeight: 'bold',
-        color: '#007BFF',
-        textAlign: 'center',
-        marginBottom: 16,
-    },
-    scrollContainer: {
-        padding: 5,
-        flexGrow: 1,
-    },
-});
 
 export default Learning;
