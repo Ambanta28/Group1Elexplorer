@@ -155,11 +155,11 @@ const styles = StyleSheet.create({
         alignItems: 'center', 
     },
     selectedGroupButton: {
-        backgroundColor: '#4CAF50', 
+        backgroundColor: '#EB7637', 
     },
     
     groupButtonText: {
-        color: '#FFFFFF',
+        color: '#00000',
         fontWeight: 'bold',
         textAlign: 'center',
         fontSize: 12,
