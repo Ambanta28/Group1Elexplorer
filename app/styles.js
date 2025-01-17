@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 1,
     },
     groupButton: {
-        backgroundColor: '#2196F3', 
+        backgroundColor: (index) => pastelColors[index % pastelColors.length],
         paddingVertical: 1,
         paddingHorizontal: 1,
         margin: 0.5, 

@@ -199,15 +199,20 @@ const Learning = () => {
                     onChangeText={setSearchText}
                 />
                 <View style={styles.groupFilterContainer}>
-                {['All', 'Halogens', 'Noble Gases','Lanthanides', 'Actinides' , 'Metalloids', 'Nonmetals', 'Alkali Metals', 'Alkaline Earth Metals', 'Transition Metals', 'Post-Transition Metals', 'Unknown Properties'].map((group) => (
+                {['All', 'Nonmetals', 'Noble Gases', 'Lanthanides', 'Actinides', 'Metalloids', 'Halogens', 'Alkali Metals', 'Alkaline Earth Metals', 'Transition Metals', 'Post-Transition Metals', 'Unknown Properties'].map((group, index) => (
                     <TouchableOpacity
                         key={group}
-                        style={[styles.groupButton, selectedGroup === group ? styles.selectedGroupButton : null]}
+                        style={[
+                            styles.groupButton,
+                            { backgroundColor: colors[index % colors.length] }, 
+                            selectedGroup === group ? styles.selectedGroupButton : null
+                        ]}
                         onPress={() => setSelectedGroup(group === 'All' ? '' : group)}
                     >
                         <Text style={styles.groupButtonText}>{group}</Text>
                     </TouchableOpacity>
                 ))}
+
                 </View>
 
                 {}
