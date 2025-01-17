@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
         marginBottom: 8,
         paddingHorizontal: 10,
         backgroundColor: '#fff',
-        width: 710,
+        width: '100%',
     },
     gridContainer: {
         flexDirection: 'row',
@@ -35,8 +35,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     element: {
-        width: 50,
-        height: 60,
+        width: '600',
+        height: '500',
         justifyContent: 'center',
         alignItems: 'center',
         margin: 10,
@@ -116,7 +116,6 @@ const styles = StyleSheet.create({
         marginBottom: 16,
     },
     scrollContainer: {
-        padding: 5,
         flexGrow: 1,
     },
 });
