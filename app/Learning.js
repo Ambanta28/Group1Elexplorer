@@ -199,7 +199,7 @@ const Learning = () => {
                     onChangeText={setSearchText}
                 />
                 <View style={styles.groupFilterContainer}>
-                {['All', 'Nonmetals', 'Noble Gases', 'Lanthanides', 'Actinides', 'Metalloids', 'Halogens', 'Alkali Metals', 'Alkaline Earth Metals', 'Transition Metals', 'Post-Transition Metals', 'Unknown Properties'].map((group, index) => (
+                {['All', 'Halogens', 'Noble Gases', 'Lanthanides', 'Actinides', 'Metalloids', 'Nonmetals', 'Alkali Metals', 'Alkaline Earth Metals', 'Transition Metals', 'Post-Transition Metals', 'Unknown Properties'].map((group, index) => (
                     <TouchableOpacity
                         key={group}
                         style={[
