@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
         paddingB: '-10%',
         justifyContent: 'center',
         alignItems: 'center',
+        left: '5%',
     },
     element: {
         width: 50,
