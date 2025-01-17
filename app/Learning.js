@@ -14,13 +14,10 @@ import {
 import * as ScreenOrientation from 'expo-screen-orientation';
 import styles from './styles';
 
-// Get screen dimensions
 const { width, height } = Dimensions.get('window');
 
-// Dynamically calculate element size based on the screen width and height
-const elementSize = Math.min(width / 10, height / 10); // Adjust size based on screen width/height
+const elementSize = Math.min(width / 10, height / 10); 
 
-// Define colors for elements
 const colors = ['#FFCDD2', '#F8BBD0', '#E1BEE7', '#D1C4E9', '#C5CAE9', '#BBDEFB', '#B3E5FC', '#B2EBF2', '#B2DFDB', '#C8E6C9', '#DCEDC8', '#F0F4C3', '#FFECB3', '#FFE0B2', '#FFCCBC', '#D7CCC8', '#CFD8DC'];
 
 const Learning = () => {
@@ -28,16 +25,13 @@ const Learning = () => {
     const [searchText, setSearchText] = useState('');
 
     useEffect(() => {
-        // Lock screen orientation to landscape mode
         ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.LANDSCAPE);
 
-        // Reset orientation when the component unmounts
         return () => {
             ScreenOrientation.unlockAsync();
         };
     }, []);
 
-    // Define periodic table elements (add all elements as needed)
     const elements = [
         { symbol: 'H', name: 'Hydrogen', number: 1, description: 'Hydrogen is the lightest and most abundant element in the universe, playing a crucial role in stars and the water we drink.', trivia: 'Did you know? Hydrogen makes up about 75% of the universe by mass!', image: 'https://www.climatecouncil.org.au/wp-content/uploads/2021/01/hydrogen.png', application: 'Used in fuel cells and rocket fuel.', row: 1, col: 1 },
         { symbol: 'He', name: 'Helium', number: 2, description: 'Helium is a noble gas often used in balloons and deep-sea diving tanks due to its low density and inert properties.', trivia: 'Fun fact: Helium makes your voice sound funny when inhaled!', image: 'https://www.thoughtco.com/thmb/WjJCGpnJuSx3xprsfEgIdwBdoGc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/186450350-56a132cb5f9b58b7d0bcf751.jpg', application: 'Used in MRI scanners and cooling superconductors.', row: 1, col: 18 },
@@ -144,22 +138,19 @@ const Learning = () => {
         {symbol: 'Lr', name: 'Lawrencium', number: 103, description: 'Lawrencium is a synthetic, radioactive element used in scientific research.', trivia: 'Lawrencium was named after Ernest O. Lawrence, the inventor of the cyclotron.', image: 'https://www.chemistrylearner.com/wp-content/uploads/2017/11/Lawrencium.jpg', application: 'Used in scientific research, particularly in particle physics.', row: 9.5, col: 17}
     ];
 
-    // Filter elements based on search input
     const filteredElements = elements.filter(
         (item) =>
             item.name.toLowerCase().includes(searchText.toLowerCase()) ||
             item.symbol.toLowerCase().includes(searchText.toLowerCase())
     );
 
-    // Handle fun interaction on long press
     const handleFunInteraction = (element) => {
         Alert.alert('Fun Interaction', `Hey! Did you know? ${element.description}`, [{ text: 'Cool!', style: 'default' }]);
     };
 
-    // Render grid item for each element
     const renderItem = (item, index) => {
-        const left = (item.col - 1) * elementSize; // Dynamic left positioning
-        const top = (item.row - 1) * elementSize; // Dynamic top positioning
+        const left = (item.col - 1) * elementSize;
+        const top = (item.row - 1) * elementSize; 
 
         return (
             <TouchableOpacity
@@ -179,10 +170,10 @@ const Learning = () => {
     return (
         <ScrollView
             contentContainerStyle={[styles.scrollContainer, { width: width, height: height }]}
-            horizontal={true}  // Enable horizontal scrolling for periodic table
-            showsHorizontalScrollIndicator={true}  // Show horizontal scroll indicator
-            showsVerticalScrollIndicator={true}  // Show vertical scroll indicator
-            style={{ flex: 1 }} // Ensures the ScrollView takes up full space
+            horizontal={true}  
+            showsHorizontalScrollIndicator={true} 
+            showsVerticalScrollIndicator={true}  
+            style={{ flex: 1 }} 
         >
             <View style={[styles.container, { width: width, height: height }]}>
                 <TextInput
@@ -192,17 +183,17 @@ const Learning = () => {
                     onChangeText={setSearchText}
                 />
 
-                {/* This ScrollView allows vertical scrolling for grid */}
+                {}
                 <ScrollView
                     contentContainerStyle={[styles.gridContainer, { width: width, height: height }]} // Enable space for all elements
-                    horizontal={false}  // Vertical scrolling for grid
+                    horizontal={false}  
                     showsVerticalScrollIndicator={true}
                     style={{ flex: 1 }}
                 >
                     {filteredElements.map((item, index) => renderItem(item, index))}
                 </ScrollView>
 
-                {/* Modal Content */}
+                {}
                 {selectedElement && (
                     <Modal
                         animationType="slide"
