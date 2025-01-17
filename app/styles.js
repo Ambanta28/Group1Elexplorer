@@ -161,6 +161,7 @@ const styles = StyleSheet.create({
         color: '#FFFFFF',
         fontWeight: 'bold',
         textAlign: 'center',
+        fontSize: 12,
     },    
     scrollContainer: {
         flexGrow: 1,
