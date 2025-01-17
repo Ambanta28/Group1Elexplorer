@@ -23,6 +23,7 @@ const colors = ['#FFCDD2', '#F8BBD0', '#E1BEE7', '#D1C4E9', '#C5CAE9', '#BBDEFB'
 const Learning = () => {
     const [selectedElement, setSelectedElement] = useState(null);
     const [searchText, setSearchText] = useState('');
+    const [selectedGroup, setSelectedGroup] = useState('');
 
     useEffect(() => {
         ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.LANDSCAPE);
@@ -69,9 +70,9 @@ const Learning = () => {
         { symbol: 'Se', name: 'Selenium', number: 34, description: 'Selenium is a non-metal used in electronics, glassmaking, and as a dietary supplement.', trivia: 'Selenium is essential for human health but can be toxic in high amounts!', image: 'https://periodictable.com/Samples/034.12/s9s.JPG', application: 'Used in electronics, glass production, and as a nutritional supplement.', group: "Nonmetals", row: 4, col: 16 },
         { symbol: 'Br', name: 'Bromine', number: 35, description: 'Bromine is a halogen element found in seawater and used in various chemical applications.', trivia: 'Bromine is one of only two elements that are liquids at room temperature!', image: 'https://periodictable.com/Samples/035.2/s9s.JPG', application: 'Used in flame retardants, pharmaceuticals, and in water treatment.', group: "Halogens", row: 4, col: 17 },
         { symbol: 'Kr', name: 'Krypton', number: 36, description: 'Krypton is a noble gas used in lighting and high-performance electrical equipment.', trivia: 'Krypton is used in some photographic flash lamps and in some types of neon signs!', image: 'https://periodictable.com/Samples/036.7/s7s.JPG', application: 'Used in lighting, photography, and in lasers.', group: "Noble Gases", row: 4, col: 18 },
-        { symbol: 'Rb', name: 'Rubidium', number: 37, description: 'Rubidium is a soft, silvery-white metallic element that is highly reactive and belongs to the alkali metal group.', trivia: 'Rubidium is one of the least abundant alkali metals on Earth!', image: 'https://periodictable.com/Samples/037.5/s9s.JPG', application: 'Used in research and in the production of special glasses and atomic clocks.', group: "Noble Gases", row: 5, col: 1 },
-        { symbol: 'Sr', name: 'Strontium', number: 38, description: 'Strontium is a soft, silvery metal that is highly reactive and is commonly used in fireworks and in the production of magnets.', trivia: 'Strontium compounds produce a bright red flame when burned!', image: 'https://periodictable.com/Samples/038.5/s9s.JPG', application: 'Used in fireworks, magnets, and in the production of ferrite ceramics.', group: "Alkali Metals", row: 5, col: 2 },
-        { symbol: 'Y', name: 'Yttrium', number: 39, description: 'Yttrium is a rare, silvery metal used in superconductors and in the production of phosphors for color television tubes.', trivia: 'Yttrium is often found in rare earth minerals!', image: 'https://periodictable.com/Samples/039.11/s9s.JPG', application: 'Used in superconductors, phosphors, and in various metal alloys.', group: "Alkaline Earth Metals", row: 5, col: 3 },
+        { symbol: 'Rb', name: 'Rubidium', number: 37, description: 'Rubidium is a soft, silvery-white metallic element that is highly reactive and belongs to the alkali metal group.', trivia: 'Rubidium is one of the least abundant alkali metals on Earth!', image: 'https://periodictable.com/Samples/037.5/s9s.JPG', application: 'Used in research and in the production of special glasses and atomic clocks.', group: "Alkali Metals", row: 5, col: 1 },
+        { symbol: 'Sr', name: 'Strontium', number: 38, description: 'Strontium is a soft, silvery metal that is highly reactive and is commonly used in fireworks and in the production of magnets.', trivia: 'Strontium compounds produce a bright red flame when burned!', image: 'https://periodictable.com/Samples/038.5/s9s.JPG', application: 'Used in fireworks, magnets, and in the production of ferrite ceramics.', group: "Alkaline Earth Metals", row: 5, col: 2 },
+        { symbol: 'Y', name: 'Yttrium', number: 39, description: 'Yttrium is a rare, silvery metal used in superconductors and in the production of phosphors for color television tubes.', trivia: 'Yttrium is often found in rare earth minerals!', image: 'https://periodictable.com/Samples/039.11/s9s.JPG', application: 'Used in superconductors, phosphors, and in various metal alloys.', group: "Transition Metals", row: 5, col: 3 },
         { symbol: 'Zr', name: 'Zirconium', number: 40, description: 'Zirconium is a corrosion-resistant metal used in nuclear reactors and in the production of high-performance ceramics.', trivia: 'Zirconium is highly resistant to corrosion and heat!', image: 'https://periodictable.com/Samples/040.17/s9s.JPG', application: 'Used in nuclear reactors, in high-performance ceramics, and in various alloys.', group: "Transition Metals", row: 5, col: 4 },
         { symbol: 'Nb', name: 'Niobium', number: 41, description: 'Niobium is a soft, grey, crystalline metal used in steel production and in high-temperature superalloys.', trivia: 'Niobium is named after the Greek goddess Niobe, due to its affinity for tantalum!', image: 'https://periodictable.com/Samples/041.13/s9s.JPG', application: 'Used in steel alloys, superconducting magnets, and in aerospace applications.', group: "Transition Metals", row: 5, col: 5 },
         { symbol: 'Mo', name: 'Molybdenum', number: 42, description: 'Molybdenum is a refractory metal used in high-strength alloys and as a catalyst in various industrial processes.', trivia: 'Molybdenum is a key component in steel production due to its high melting point!', image: 'https://periodictable.com/Samples/042.2/s9s.JPG', application: 'Used in steel production, high-strength alloys, and as a catalyst in chemical processes.', group: "Transition Metals", row: 5, col: 6 },
@@ -144,7 +145,7 @@ const Learning = () => {
         {symbol: "Mt", name: "Meitnerium", number: 109, description: "Meitnerium is a synthetic element named in honor of physicist Lise Meitner.", trivia: "It was first synthesized in 1982 at the GSI Helmholtz Centre in Germany.", image: "https://periodictable.com/Samples/109.1/s9s.JPG", application: "Primarily used in scientific research.", group: "Transition Metals", row: 7, col: 9}, 
         {symbol: "Ds", name: "Darmstadtium", number: 110, description: "Darmstadtium is a synthetic element with no stable isotopes.", trivia: "Named after Darmstadt, Germany, where it was first synthesized.", image: "https://periodictable.com/Samples/110.1/s9s.JPG", application: "Primarily used in scientific research.", group: "Transition Metals", row: 7, col: 10}, 
         {symbol: "Rg", name: "Roentgenium", number: 111, description: "Roentgenium is a synthetic element named after Wilhelm Roentgen, the discoverer of X-rays.", trivia: "Roentgenium is highly unstable and radioactive, with only a few atoms ever created.", image: "https://periodictable.com/Samples/111.1/s9s.JPG", application: "Primarily used in scientific research.", group: "Transition Metals", row: 7, col: 11}, 
-        {symbol: "Cn", name: "Copernicium", number: 112, description: "Copernicium is a synthetic element named after astronomer Nicolaus Copernicus.", trivia: "Copernicium is highly radioactive, with a half-life of just a few minutes.", image: "https://periodictable.com/Samples/112.1/s9s.JPG", application: "Primarily used in scientific research.", group: "Post-Transition Metals", row: 7, col: 12}, 
+        {symbol: "Cn", name: "Copernicium", number: 112, description: "Copernicium is a synthetic element named after astronomer Nicolaus Copernicus.", trivia: "Copernicium is highly radioactive, with a half-life of just a few minutes.", image: "https://periodictable.com/Samples/112.1/s9s.JPG", application: "Primarily used in scientific research.", group: "Transition Metals", row: 7, col: 12}, 
         {symbol: "Nh", name: "Nihonium", number: 113, description: "Nihonium is a synthetic element, first created in Japan.", trivia: "Named after Japan (Nihon), where it was discovered in 2004.", image: "https://periodictable.com/Samples/113.1/s9s.JPG", application: "Primarily used in scientific research.", group: "Post-Transition Metals", row: 7, col: 13}, 
         {symbol: "Fl", name: "Flerovium", number: 114, description: "Flerovium is a synthetic element named after the Flerov Laboratory of Nuclear Reactions in Russia.", trivia: "Flerovium is highly unstable and has a very short half-life.", image: "https://periodictable.com/Samples/114.1/s12s.JPG", application: "Primarily used in scientific research.", group: "Post-Transition Metals", row: 7, col: 14}, 
         {symbol: "Mc", name: "Moscovium", number: 115, description: "Moscovium is a synthetic element named after Moscow, Russia.", trivia: "Moscovium was first synthesized in 2004 by a team of Russian scientists.", image: "https://periodictable.com/Samples/115.1/s9s.JPG", application: "Primarily used in scientific research.", group: "Post-Transition Metals", row: 7, col: 15}, 
@@ -153,11 +154,11 @@ const Learning = () => {
         {symbol: "Og", name: "Oganesson", number: 118, description: "Oganesson is a synthetic element named after physicist Yuri Oganessian.", trivia: "Oganesson is the heaviest known element with the highest atomic number.", image: "https://periodictable.com/Samples/118.1/s9s.JPG", application: "Primarily used in scientific research.", group: "Noble Gases", row: 7, col: 18}
     ];
     
-    const filteredElements = elements.filter(
-        (item) =>
-            item.name.toLowerCase().includes(searchText.toLowerCase()) ||
-            item.symbol.toLowerCase().includes(searchText.toLowerCase())
-    );
+    const filteredElements = elements.filter((item) => {
+        const matchesSearch = item.name.toLowerCase().includes(searchText.toLowerCase()) || item.symbol.toLowerCase().includes(searchText.toLowerCase());
+        const matchesGroup = selectedGroup === '' || item.group === selectedGroup;
+        return matchesSearch && matchesGroup;
+    });
 
     const handleFunInteraction = (element) => {
         Alert.alert('Fun Interaction', `Hey! Did you know? ${element.trivia}`, [{ text: 'Cool!', style: 'default' }]);
@@ -197,6 +198,17 @@ const Learning = () => {
                     value={searchText}
                     onChangeText={setSearchText}
                 />
+                <View style={styles.groupFilterContainer}>
+                {['All', 'Nonmetals', 'Noble gases', 'Alkali Metals', 'Alkaline Earth Metals', 'Transition Metals'].map((group) => (
+                    <TouchableOpacity
+                        key={group}
+                        style={[styles.groupButton, selectedGroup === group ? styles.selectedGroupButton : null]}
+                        onPress={() => setSelectedGroup(group === 'All' ? '' : group)}
+                    >
+                        <Text style={styles.groupButtonText}>{group}</Text>
+                    </TouchableOpacity>
+                ))}
+                </View>
 
                 {}
                 <ScrollView
