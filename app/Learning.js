@@ -230,11 +230,6 @@ const Learning = () => {
                                 <Text style={styles.modalDescription}>{selectedElement.description}</Text>
                                 <Text style={styles.modalApplication}>Real-World Application: {selectedElement.application}</Text>
                                 <Text style={styles.modalTrivia}>Trivia: {selectedElement.trivia}</Text>
-                                <Button
-                                    title="Close"
-                                    onPress={() => setSelectedElement(null)}
-                                    color="#007BFF"
-                                />
                             </View>
                         </View>
                     </Modal>

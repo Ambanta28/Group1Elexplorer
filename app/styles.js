@@ -84,10 +84,12 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     modalSymbol: {
+        position: 'absolute',
         fontSize: 28,
         fontWeight: 'bold',
     },
     modalName: {
+        position: 'absolute',
         fontSize: 20,
         marginBottom: 2,
     },
@@ -102,6 +104,9 @@ const styles = StyleSheet.create({
     },
     modalDescription: {
         position: 'absolute',
+        top: '50%',
+        left: '35%',
+        width: '60%',
         fontSize: 14,
         textAlign: 'center',
         marginBottom: 8,
@@ -113,6 +118,10 @@ const styles = StyleSheet.create({
         marginBottom: 8,
     },
     modalTrivia: {
+        position: 'absolute',
+        top: '80%',
+        left: '35%',
+        width: '60%',
         fontSize: 14,
         fontWeight: 'bold',
         color: '#007BFF',
