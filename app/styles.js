@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
         marginBottom: 8,
         paddingHorizontal: 10,
         backgroundColor: '#fff',
+        width: 710,
     },
     gridContainer: {
         flexDirection: 'row',
