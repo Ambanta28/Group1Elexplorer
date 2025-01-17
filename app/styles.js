@@ -137,6 +137,31 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         marginBottom: 16,
     },
+    groupFilterContainer: {
+        flexDirection: 'row',
+        flexWrap: 'wrap', 
+        justifyContent: 'center', 
+        marginVertical: 4,
+        paddingHorizontal: 4,
+    },
+    groupButton: {
+        backgroundColor: '#2196F3', 
+        paddingVertical: 4,
+        paddingHorizontal: 8,
+        margin: 3, 
+        borderRadius: 3,
+        width: '20%', 
+        alignItems: 'center', 
+    },
+    selectedGroupButton: {
+        backgroundColor: '#4CAF50', 
+    },
+    
+    groupButtonText: {
+        color: '#FFFFFF',
+        fontWeight: 'bold',
+        textAlign: 'center',
+    },    
     scrollContainer: {
         flexGrow: 1,
     },
