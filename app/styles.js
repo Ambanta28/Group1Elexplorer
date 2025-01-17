@@ -50,10 +50,6 @@ const styles = StyleSheet.create({
     number: {
         fontSize: 12,
     },
-    name: {
-        fontSize: 8,
-        fontWeight: 'bold',
-    },
     modalContainer: {
         flex: 1,
         justifyContent: 'center',
