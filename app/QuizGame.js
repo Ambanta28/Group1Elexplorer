@@ -215,6 +215,7 @@ const QuizGame = () => {
     </SafeAreaView>
   );
 };
+//
 
 const styles = StyleSheet.create({
   container: {
