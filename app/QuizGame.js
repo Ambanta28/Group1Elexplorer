@@ -102,7 +102,9 @@ const QuizGame = () => {
             <TouchableOpacity style={styles.modeButton} onPress={() => setMode('quiz')}>
               <Text style={styles.buttonText}>Quiz</Text>
             </TouchableOpacity>
-            
+            <TouchableOpacity style={styles.modeButton} onPress={() => setMode('matching')}>
+              <Text style={styles.buttonText}>Matching Game</Text>
+            </TouchableOpacity>
           </View>
         ) : mode === 'quiz' ? (
           showScore ? (
@@ -145,7 +147,6 @@ const QuizGame = () => {
               </View>
             </View>
           )
-          
         ) : mode === 'matching' ? (
           <View>
             <Text style={styles.title}>Match the Element Cards:</Text>
