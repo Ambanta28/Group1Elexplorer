@@ -24,7 +24,7 @@ const Home = () => {
         />
         <Text style={styles.appName}>ELEXPLORER</Text>
         <View style={styles.buttonContainer}>
-            {['Learning'].map((title, index) => (
+            {['Learning','QuizGame'].map((title, index) => (
                 <TouchableOpacity
                     key={index}
                     style={[styles.button, { backgroundColor: getRandomColor() }]}
