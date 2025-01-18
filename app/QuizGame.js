@@ -145,6 +145,7 @@ const QuizGame = () => {
               </View>
             </View>
           )
+          
         ) : mode === 'matching' ? (
           <View>
             <Text style={styles.title}>Match the Element Cards:</Text>
