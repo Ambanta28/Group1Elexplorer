@@ -105,6 +105,9 @@ const QuizGame = () => {
             <TouchableOpacity style={styles.modeButton} onPress={() => setMode('matching')}>
               <Text style={styles.buttonText}>Matching Game</Text>
             </TouchableOpacity>
+            <TouchableOpacity style={styles.modeButton} onPress={() => setMode('flashcards')}>
+              <Text style={styles.buttonText}>Flash Cards</Text>
+            </TouchableOpacity>
           </View>
         ) : mode === 'quiz' ? (
           showScore ? (
@@ -215,7 +218,6 @@ const QuizGame = () => {
     </SafeAreaView>
   );
 };
-//
 
 const styles = StyleSheet.create({
   container: {
