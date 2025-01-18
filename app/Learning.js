@@ -1,16 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {
-    View,
-    Text,
-    TouchableOpacity,
-    Modal,
-    Image,
-    Button,
-    TextInput,
-    Alert,
-    ScrollView,
-    Dimensions,
-} from 'react-native';
+import {View, Text, TouchableOpacity, Modal, Image, Button, TextInput, Alert, ScrollView, Dimensions} from 'react-native';
 import * as ScreenOrientation from 'expo-screen-orientation';
 import styles from './styles';
 
