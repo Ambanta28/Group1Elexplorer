@@ -156,8 +156,7 @@ const Learning = () => {
     
     const filteredElements = elements.filter((item) => {
         const matchesSearch = item.name.toLowerCase().includes(searchText.toLowerCase()) || item.symbol.toLowerCase().includes(searchText.toLowerCase());
-        const matchesGroup = selectedGroup === '' || item.group === selectedGroup;
-        return matchesSearch && matchesGroup;
+        return matchesSearch; 
     });
 
     const handleFunInteraction = (element) => {
@@ -168,10 +167,24 @@ const Learning = () => {
         const left = (item.col - 1) * elementSize; 
         const top = (item.row - 1) * elementSize; 
 
+        const isFaded = selectedGroup !== '' && item.group !== selectedGroup;
+        const elementOpacity = isFaded ? 0.2 : 1; 
+
         return (
             <TouchableOpacity
                 key={index}
-                style={[styles.element, { backgroundColor: colors[index % colors.length], left, top, width: elementSize, height: elementSize, position: 'absolute' }]}
+                style={[
+                    styles.element,
+                    {
+                        backgroundColor: colors[index % colors.length],
+                        left,
+                        top,
+                        width: elementSize,
+                        height: elementSize,
+                        position: 'absolute',
+                        opacity: elementOpacity, 
+                    },
+                ]}
                 onPress={() => setSelectedElement(item)}
                 onLongPress={() => handleFunInteraction(item)}
                 accessible={true}
